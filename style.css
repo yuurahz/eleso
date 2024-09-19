@@ -348,7 +348,7 @@ p {
 	justify-content: center;
 	flex-direction: column;
 	width: auto;
-	margin: 20px auto;
+	margin: auto;
 	overflow: hidden;
 	border-radius: 10px;
 }
@@ -377,7 +377,7 @@ p {
 }
 #projects .project-img {
 	flex-basis: 50%;
-	height: 300px;
+	height: auto;
 	overflow: hidden;
 	position: relative;
 }
@@ -387,7 +387,7 @@ p {
 	height: auto;
 	width: auto;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.2;
+	opacity: 0.5;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -515,7 +515,7 @@ p {
 #footer .social-item {
 	height: 50px;
 	width: 50px;
-	margin: 0 5px;
+	margin: 7px;
 }
 #footer .social-item img {
 	filter: grayscale(1);
