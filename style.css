@@ -353,7 +353,7 @@ p {
 	border-radius: 10px;
 }
 #projects .project-info {
-	padding: 30%;
+	padding: auto;
 	flex-basis: 50%;
 	height: 100%;
 	display: flex;
