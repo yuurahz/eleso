@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(./img/juara.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -353,7 +353,7 @@ p {
 	border-radius: 10px;
 }
 #projects .project-info {
-	padding: 30px;
+	padding: 30%;
 	flex-basis: 50%;
 	height: 100%;
 	display: flex;
