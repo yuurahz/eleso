@@ -347,7 +347,7 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 80%;
+	width: auto;
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
@@ -387,7 +387,7 @@ p {
 	height: auto;
 	width: auto;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0;
+	opacity: 0.2;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -428,8 +428,8 @@ p {
 	font-size: 2rem;
 }
 #about .col-left .about-img {
-	height: 100%;
-	width: 100%;
+	height: auto;
+	width: auto;
 	position: relative;
 	border: 10px solid white;
 }
@@ -438,8 +438,8 @@ p {
 	position: absolute;
 	left: -33px;
 	top: 19px;
-	height: 98%;
-	width: 98%;
+	height: auto;
+	width: auto;
 	border: 7px solid crimson;
 	z-index: -1;
 }
