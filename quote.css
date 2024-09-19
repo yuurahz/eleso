@@ -1,0 +1,42 @@
+
+        /* Hide the buttons */ 
+        input[type="checkbox"] { 
+            display: none; 
+        } 
+  
+        /* Style the labels as buttons */ 
+        label { 
+            display: block; 
+            height: 20px;
+            padding: 10px 20px; 
+            background-color: #3498db; 
+            color: #fff; 
+            cursor: pointer; 
+            margin-top: 20px;
+            margin-bottom: 8px; 
+            border-radius: 3px; 
+            text-align: center;
+            /*position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);*/
+        } 
+  
+          
+        input[type="checkbox"]:checked+label { 
+            background-color: gray; 
+        } 
+  
+        /* Hide the content divs by default */ 
+        .content { 
+            display: none; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-top: none; 
+            border-radius: 0 0 5px 5px; 
+        } 
+  
+        /* Show the content */ 
+        input[type="checkbox"]:checked+label+.content { 
+            display: block; 
+        } 
