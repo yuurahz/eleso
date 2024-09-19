@@ -389,7 +389,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.3;
+	opacity: 0.5;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
@@ -464,7 +464,7 @@ p {
 	text-align: center;
 	border-radius: 10px;
 	padding: 30px;
-	margin: 30px;
+	margin: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -645,7 +645,7 @@ p {
 		left: -45px;
 		top: 34px;
 		height: 98%;
-		width: 98%;
+		width: auto;
 		border: 10px solid crimson;
 	}
 	#about .col-right {
@@ -722,4 +722,3 @@ p {
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
