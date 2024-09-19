@@ -589,6 +589,212 @@ p {
     justify-content: space-between;
 }
 
+/* Carousel*/
+.thumbnail-mary {
+	text-align: center;
+	overflow: hidden;
+	transition: all .3s ease;
+}
+
+.thumbnail-mary::before, .thumbnail-mary::after {
+	position: absolute;
+	content: '';
+	transition: inherit;
+	pointer-events: none;
+}
+
+.thumbnail-mary::before {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(25, 24, 24, 0.45);
+	z-index: 1;
+}
+
+.thumbnail-mary::after {
+	display: inline-block;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	z-index: 1;
+}
+
+.thumbnail-mary-2::after {
+	display: none;
+}
+
+.thumbnail-mary-2 .thumbnail-mary-caption .icon:hover {
+	color: #01b3a7;
+}
+
+.thumbnail-mary-3::before {
+	background: rgba(22, 46, 68, 0.37);
+}
+
+.thumbnail-xxs .thumbnail-mary-caption .icon {
+	font-size: 30px;
+}
+
+.thumbnail-mary-figure {
+	display: block;
+}
+
+.thumbnail-mary-figure img {
+	width: 100%;
+	transition: all .3s ease;
+}
+
+.thumbnail-mary-caption {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	content: '';
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.thumbnail-mary-caption > * {
+	pointer-events: auto;
+}
+
+.thumbnail-mary-caption .icon {
+	font-size: 36px;
+}
+
+.thumbnail-mary-caption .icon img {
+	display: none;
+}
+
+.thumbnail-mary-caption .icon, .thumbnail-mary-caption .icon:focus, .thumbnail-mary-caption .icon:active {
+	color: #ffffff;
+}
+
+.thumbnail-mary-caption .icon:hover {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.thumbnail-mary-title {
+	color: #ffffff;
+}
+
+.thumbnail-mary-title a, .thumbnail-mary-title a:focus, .thumbnail-mary-title a:active {
+	color: inherit;
+}
+
+.thumbnail-mary-title a:hover {
+	color: #01b3a7;
+}
+
+.thumbnail-mary-project {
+	font-weight: 400;
+}
+
+.thumbnail-mary-time {
+	font-weight: 400;
+	color: #01b3a7;
+}
+
+.owl-timeline .thumbnail-mary-decor {
+	display: inline-block;
+	position: relative;
+	margin: 15px 0 14px;
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background: #01b3a7;
+}
+
+.owl-timeline .thumbnail-mary-decor::before, .owl-timeline .thumbnail-mary-decor::after {
+	display: inline-block;
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+	opacity: 1;
+	transform: none;
+	visibility: visible;
+}
+
+.owl-timeline .thumbnail-mary-decor::before {
+	background: rgba(1, 179, 167, 0.5);
+	animation: item1B 1s ease infinite;
+}
+
+.owl-timeline .thumbnail-mary-decor::after {
+	background: rgba(1, 179, 167, 0.3);
+	animation: item1A 1s ease infinite;
+}
+
+.thumbnail-mary-description .thumbnail-mary-decor {
+	display: none;
+}
+
+@media (min-width: 992px) {
+	.desktop .thumbnail-mary::before {
+		opacity: 0;
+		visibility: hidden;
+	}
+	.desktop .thumbnail-mary::after {
+		transform: scale(0.85);
+		opacity: 0;
+		visibility: hidden;
+	}
+	.desktop .thumbnail-mary-figure img {
+		transform: scale(1.2);
+		will-change: transform;
+	}
+	.desktop .thumbnail-mary-caption .icon,
+	.desktop .thumbnail-mary-title {
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s ease;
+	}
+	.desktop .thumbnail-mary-caption .icon {
+		transform: translate3d(0, -10px, 0);
+	}
+	.desktop .thumbnail-mary-title {
+		transform: translate3d(0, 10px, 0);
+	}
+	.desktop .thumbnail-mary:hover::before {
+		opacity: 1;
+		visibility: visible;
+	}
+	.desktop .thumbnail-mary:hover::after {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	.desktop .thumbnail-mary:hover .thumbnail-mary-figure img {
+		transform: none;
+	}
+	.desktop .thumbnail-mary:hover .icon,
+	.desktop .thumbnail-mary:hover .thumbnail-mary-title {
+		opacity: 1;
+		visibility: visible;
+		transform: none;
+	}
+	.desktop .owl-timeline:hover .thumbnail-mary-decor::before, .desktop .owl-timeline:hover .thumbnail-mary-decor::after {
+		animation: none;
+	}
+	.desktop .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::before {
+		animation: item1B 1s ease infinite;
+	}
+	.desktop .owl-timeline:hover .owl-stage > .owl-item:hover .thumbnail-mary-decor::after {
+		animation: item1A 1s ease infinite;
+	}
+}
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
