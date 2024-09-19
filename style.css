@@ -517,7 +517,7 @@ p {
 #footer .social-item {
 	height: 50px;
 	width: 50px;
-	margin: 5%;
+	margin: 0 5px;
 }
 #footer .social-item img {
 	filter: grayscale(1);
