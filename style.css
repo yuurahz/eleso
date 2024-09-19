@@ -512,12 +512,12 @@ p {
 }
 #footer .social-icon {
 	display: flex;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 #footer .social-item {
 	height: 50px;
 	width: 50px;
-	margin: 0 5px;
+	margin: 0 7px;
 }
 #footer .social-item img {
 	filter: grayscale(1);
