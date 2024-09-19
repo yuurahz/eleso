@@ -386,9 +386,10 @@ p {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
-	width: 100%;
+	height: auto;
+	width: auto;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0;
 }
 #projects .project-img img {
 	transition: 0.3s ease transform;
