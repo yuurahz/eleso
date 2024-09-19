@@ -347,8 +347,8 @@ p {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: auto;
-	margin: auto;
+	width: 80%;
+	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
 }
@@ -436,7 +436,7 @@ p {
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
-	left: -33px;
+	left: 33px;
 	top: 19px;
 	height: auto;
 	width: auto;
@@ -515,7 +515,7 @@ p {
 #footer .social-item {
 	height: 50px;
 	width: 50px;
-	margin: 7px;
+	margin: 0 7px;
 }
 #footer .social-item img {
 	filter: grayscale(1);
